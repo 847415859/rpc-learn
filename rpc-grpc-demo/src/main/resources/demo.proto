@@ -1,0 +1,9 @@
+//  版本设定
+syntax = "proto3";
+
+option  java_multiple_files=false;
+
+option java_package="com.tk.grpc";
+
+option java_outer_classname="OuterService";
+
