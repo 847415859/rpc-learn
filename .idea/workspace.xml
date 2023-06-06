@@ -4,40 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83da35ef-e25c-4fac-867c-edf8b2e1f6e8" name="Changes" comment="Init">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-api/src/main/java/com/tk/grpc/interceptor/client/CustomClientInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-api/src/main/java/com/tk/grpc/interceptor/client/CustomClientStreamTracer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-api/src/main/java/com/tk/grpc/interceptor/client/CustomClientStreamTracerFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-api/src/main/java/com/tk/grpc/interceptor/client/CustomComplexClientInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-api/src/main/java/com/tk/grpc/interceptor/client/CustomForwardingClientClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-api/src/main/java/com/tk/grpc/interceptor/client/CustomServerInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-api/src/main/java/com/tk/grpc/interceptor/client/CustomerStreamClientInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-api/src/main/java/com/tk/grpc/interceptor/server/CustomCallListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-api/src/main/java/com/tk/grpc/interceptor/server/CustomCombiateServerInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-api/src/main/java/com/tk/grpc/interceptor/server/CustomComplexServerInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-api/src/main/java/com/tk/grpc/interceptor/server/CustomServerCall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-api/src/main/java/com/tk/grpc/interceptor/server/CustomServerCallListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-api/src/main/java/com/tk/grpc/interceptor/server/CustomServerStreamFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-api/src/main/java/com/tk/grpc/interceptor/server/CustomServerStreamTracer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-api/src/main/proto/HelloService.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-boot-server/src/main/java/com/tk/rpcgrpcbootserver/service/HelloServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-client/src/main/java/com/tk/grpc/client/HelloServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-client/src/main/java/com/tk/grpc/client/HelloServiceRepeatClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-client/src/main/java/com/tk/grpc/client/HelloServiceSpBlockClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-client/src/main/java/com/tk/grpc/client/HelloServiceSpNoBlockClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-server/src/main/java/com/tk/grpc/server/GrpcServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-server/src/main/java/com/tk/grpc/service/HelloServiceImpl.java" afterDir="false" />
+    <list default="true" id="83da35ef-e25c-4fac-867c-edf8b2e1f6e8" name="Changes" comment="grpc 简单使用、客户端/服务器端拦截器，及集成Springboot">
+      <change afterPath="$PROJECT_DIR$/rpc-grpc-register-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-grpc-register-client/src/main/java/com/tk/grpc/NameResolverClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-grpc-register-client/src/main/java/com/tk/grpc/NameResolverGrpcClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-grpc-register-client/src/main/java/com/tk/grpc/config/CustomNameResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-grpc-register-client/src/main/java/com/tk/grpc/config/CustomNameResolverProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-grpc-register-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-grpc-register-server/src/main/java/com/tk/grpc/GrpcServerConsul.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-grpc-register-server/src/main/java/com/tk/grpc/NameResolverServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-grpc-register-server/src/main/java/com/tk/grpc/server/HelloServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-grpc-demo/src/main/resources/demo.proto" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-grpc-demo/src/main/resources/demo.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-grpc-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-grpc-api/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +39,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -97,7 +80,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -112,13 +95,13 @@
       <recent name="com.tk" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HelloServiceClient">
-    <configuration name="GrpcServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tk.grpc.server.GrpcServer" />
-      <module name="rpc-grpc-server" />
+  <component name="RunManager" selected="Application.NameResolverGrpcClient">
+    <configuration name="GrpcServerConsul" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tk.grpc.GrpcServerConsul" />
+      <module name="rpc-grpc-register-server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tk.grpc.server.*" />
+          <option name="PATTERN" value="com.tk.grpc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloServiceSpBlockClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tk.grpc.client.HelloServiceSpBlockClient" />
-      <module name="rpc-grpc-client" />
+    <configuration name="NameResolverClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tk.grpc.NameResolverClient" />
+      <module name="rpc-grpc-register-client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tk.grpc.client.*" />
+          <option name="PATTERN" value="com.tk.grpc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,12 +135,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloServiceSpNoBlockClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tk.grpc.client.HelloServiceSpNoBlockClient" />
-      <module name="rpc-grpc-client" />
+    <configuration name="NameResolverGrpcClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tk.grpc.NameResolverGrpcClient" />
+      <module name="rpc-grpc-register-client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tk.grpc.client.*" />
+          <option name="PATTERN" value="com.tk.grpc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,18 +148,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RpcGrpcBootClientApplicationTests.testGrpcCall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rpc-grpc-boot-client" />
+    <configuration name="NameResolverServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tk.grpc.NameResolverServer" />
+      <module name="rpc-grpc-register-server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tk.rpcgrpcbootclient.*" />
+          <option name="PATTERN" value="com.tk.grpc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tk.rpcgrpcbootclient" />
-      <option name="MAIN_CLASS_NAME" value="com.tk.rpcgrpcbootclient.RpcGrpcBootClientApplicationTests" />
-      <option name="METHOD_NAME" value="testGrpcCall" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -197,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NameResolverGrpcClient" />
+        <item itemvalue="Application.GrpcServerConsul" />
+        <item itemvalue="Application.NameResolverClient" />
+        <item itemvalue="Application.NameResolverServer" />
         <item itemvalue="Application.HelloServiceClient" />
-        <item itemvalue="Application.HelloServiceSpBlockClient" />
-        <item itemvalue="Application.GrpcServer" />
-        <item itemvalue="JUnit.RpcGrpcBootClientApplicationTests.testGrpcCall" />
-        <item itemvalue="Application.HelloServiceSpNoBlockClient" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +194,8 @@
       <option name="presentableId" value="Default" />
       <updated>1686029606187</updated>
       <workItem from="1686029608257" duration="458000" />
-      <workItem from="1686030109306" duration="19163000" />
+      <workItem from="1686030109306" duration="20717000" />
+      <workItem from="1686090508789" duration="489000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1686030630353</created>
@@ -223,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686030630353</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="grpc 简单使用、客户端/服务器端拦截器，及集成Springboot">
+      <created>1686055435585</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686055435585</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +230,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init" />
+    <MESSAGE value="grpc 简单使用、客户端/服务器端拦截器，及集成Springboot" />
+    <option name="LAST_COMMIT_MESSAGE" value="grpc 简单使用、客户端/服务器端拦截器，及集成Springboot" />
   </component>
 </project>

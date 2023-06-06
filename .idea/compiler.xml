@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="rpc-grpc-server" />
-        <module name="rpc-grpc-client" />
-        <module name="rpc-grpc-api" />
         <module name="rpc-grpc-boot-client" />
         <module name="rpc-grpc-demo" />
+        <module name="rpc-grpc-register-server" />
+        <module name="rpc-grpc-client" />
+        <module name="rpc-grpc-api" />
+        <module name="rpc-grpc-register-client" />
         <module name="rpc-grpc-boot-server" />
       </profile>
     </annotationProcessing>

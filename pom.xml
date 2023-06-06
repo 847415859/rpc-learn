@@ -13,6 +13,8 @@
         <module>rpc-grpc-api</module>
         <module>rpc-grpc-server</module>
         <module>rpc-grpc-client</module>
+        <module>rpc-grpc-register-server</module>
+        <module>rpc-grpc-register-client</module>
     </modules>
 
     <properties>
