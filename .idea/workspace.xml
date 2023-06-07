@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83da35ef-e25c-4fac-867c-edf8b2e1f6e8" name="Changes" comment="grpc 集成注册中心 consul">
-      <change afterPath="$PROJECT_DIR$/rpc-grpc-client/src/main/java/com/tk/grpc/client/HelloDoubleStreamServiceClient.java" afterDir="false" />
+    <list default="true" id="83da35ef-e25c-4fac-867c-edf8b2e1f6e8" name="Changes" comment="grpc 服务端客户端双向流Demo">
+      <change afterPath="$PROJECT_DIR$/rpc-grpc-boot-server/src/main/java/com/tk/rpcgrpcbootserver/config/AutoConfigurationImportSelector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-grpc-boot-server/src/main/java/com/tk/rpcgrpcbootserver/config/EnableAutoConfigurationImportSelector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-grpc-nacos-client/src/main/java/com/tk/rpcgrpcnacosclient/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-grpc-nacos-server/src/main/java/com/tk/rpcgrpcnacosserver/config/AutoConfigurationImportSelector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-grpc-nacos-server/src/main/java/com/tk/rpcgrpcnacosserver/service/HelloServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-grpc-api/src/main/proto/HelloService.proto" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-grpc-api/src/main/proto/HelloService.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-grpc-server/src/main/java/com/tk/grpc/service/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-grpc-server/src/main/java/com/tk/grpc/service/HelloServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +76,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="jdk.selected.JAVA_MODULE" value="graalvm-17" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/rpc-grpc-api/src/main/java" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -79,7 +85,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -94,26 +100,13 @@
       <recent name="com.tk" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HelloDoubleStreamServiceClient">
+  <component name="RunManager" selected="Spring Boot.RpcGrpcNacosClientApplication">
     <configuration name="GrpcServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tk.grpc.server.GrpcServer" />
       <module name="rpc-grpc-server" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.tk.grpc.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GrpcServerConsul" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tk.grpc.GrpcServerConsul" />
-      <module name="rpc-grpc-register-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tk.grpc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,28 +127,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloServiceClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tk.grpc.client.HelloServiceClient" />
-      <module name="rpc-grpc-client" />
+    <configuration name="RpcGrpcNacosClientApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rpc-grpc-nacos-client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tk.grpc.client.*" />
+          <option name="PATTERN" value="com.tk.rpcgrpcnacosclient.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.tk.rpcgrpcnacosclient" />
+      <option name="MAIN_CLASS_NAME" value="com.tk.rpcgrpcnacosclient.RpcGrpcNacosClientApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NameResolverGrpcClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tk.grpc.NameResolverGrpcClient" />
-      <module name="rpc-grpc-register-client" />
+    <configuration name="RpcGrpcNacosClientApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rpc-grpc-nacos-client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tk.grpc.*" />
+          <option name="PATTERN" value="com.tk.rpcgrpcnacosclient.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.tk.rpcgrpcnacosclient" />
+      <option name="MAIN_CLASS_NAME" value="com.tk.rpcgrpcnacosclient.RpcGrpcNacosClientApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RpcGrpcNacosClientApplicationTests.testNacosCall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rpc-grpc-nacos-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tk.rpcgrpcnacosclient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tk.rpcgrpcnacosclient" />
+      <option name="MAIN_CLASS_NAME" value="com.tk.rpcgrpcnacosclient.RpcGrpcNacosClientApplicationTests" />
+      <option name="METHOD_NAME" value="testNacosCall" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -174,13 +188,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RpcGrpcNacosClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rpc-grpc-nacos-client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tk.rpcgrpcnacosclient.RpcGrpcNacosClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RpcGrpcNacosServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rpc-grpc-nacos-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tk.rpcgrpcnacosserver.RpcGrpcNacosServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RpcGrpcNacosClientApplicationTests" />
+        <item itemvalue="JUnit.RpcGrpcNacosClientApplicationTests.testNacosCall" />
+        <item itemvalue="JUnit.RpcGrpcNacosClientApplicationTests.contextLoads" />
         <item itemvalue="Application.HelloDoubleStreamServiceClient" />
         <item itemvalue="Application.GrpcServer" />
-        <item itemvalue="Application.HelloServiceClient" />
-        <item itemvalue="Application.NameResolverGrpcClient" />
-        <item itemvalue="Application.GrpcServerConsul" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +222,8 @@
       <updated>1686029606187</updated>
       <workItem from="1686029608257" duration="458000" />
       <workItem from="1686030109306" duration="20717000" />
-      <workItem from="1686090508789" duration="12041000" />
+      <workItem from="1686090508789" duration="25927000" />
+      <workItem from="1686177265528" duration="2945000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1686030630353</created>
@@ -217,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686091042924</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="grpc 服务端客户端双向流Demo">
+      <created>1686108515839</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686108515839</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +274,8 @@
     <MESSAGE value="Init" />
     <MESSAGE value="grpc 简单使用、客户端/服务器端拦截器，及集成Springboot" />
     <MESSAGE value="grpc 集成注册中心 consul" />
-    <option name="LAST_COMMIT_MESSAGE" value="grpc 集成注册中心 consul" />
+    <MESSAGE value="grpc 服务端客户端双向流Demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="grpc 服务端客户端双向流Demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -247,16 +284,6 @@
           <url>file://$PROJECT_DIR$/rpc-grpc-client/src/main/java/com/tk/grpc/client/HelloServiceClient.java</url>
           <line>56</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rpc-grpc-api/src/main/java/com/tk/HelloServiceGrpc.java</url>
-          <line>304</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../Java/Maven/reRepository/io/grpc/grpc-stub/1.51.0/grpc-stub-1.51.0.jar!/io/grpc/stub/ClientCalls.class</url>
-          <line>121</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rpc-grpc-api/src/main/java/com/tk/grpc/interceptor/client/CustomForwardingClientClass.java</url>
@@ -279,16 +306,6 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../Java/Maven/reRepository/io/grpc/grpc-stub/1.51.0/grpc-stub-1.51.0.jar!/io/grpc/stub/ServerCalls.class</url>
-          <line>250</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../Java/Maven/reRepository/io/grpc/grpc-stub/1.51.0/grpc-stub-1.51.0.jar!/io/grpc/stub/ClientCalls.class</url>
-          <line>180</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rpc-grpc-api/src/main/java/com/tk/grpc/interceptor/client/CustomForwardingClientClass.java</url>
           <line>64</line>
           <option name="timeStamp" value="15" />
@@ -304,16 +321,6 @@
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../Java/Maven/reRepository/io/grpc/grpc-stub/1.51.0/grpc-stub-1.51.0.jar!/io/grpc/stub/ClientCalls.class</url>
-          <line>218</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../Java/Maven/reRepository/io/grpc/grpc-core/1.51.0/grpc-core-1.51.0.jar!/io/grpc/internal/ClientCallImpl.class</url>
-          <line>375</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>jar://$PROJECT_DIR$/../../Java/Maven/reRepository/io/grpc/grpc-core/1.51.0/grpc-core-1.51.0.jar!/io/grpc/internal/ServerImpl.class</url>
           <line>617</line>
           <option name="timeStamp" value="25" />
@@ -322,11 +329,6 @@
           <url>jar://$PROJECT_DIR$/../../Java/Maven/reRepository/io/grpc/grpc-core/1.51.0/grpc-core-1.51.0.jar!/io/grpc/internal/ServerImpl.class</url>
           <line>626</line>
           <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../Java/Maven/reRepository/io/grpc/grpc-core/1.51.0/grpc-core-1.51.0.jar!/io/grpc/internal/DelayedClientCall.class</url>
-          <line>336</line>
-          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$PROJECT_DIR$/../../Java/Maven/reRepository/io/grpc/grpc-core/1.51.0/grpc-core-1.51.0.jar!/io/grpc/internal/ServerImpl.class</url>
@@ -347,6 +349,66 @@
           <url>jar://$PROJECT_DIR$/../../Java/Maven/reRepository/io/grpc/grpc-netty-shaded/1.51.0/grpc-netty-shaded-1.51.0.jar!/io/grpc/netty/shaded/io/grpc/netty/NettyServerHandler.class</url>
           <line>772</line>
           <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rpc-grpc-nacos-client/src/test/java/com/tk/rpcgrpcnacosclient/RpcGrpcNacosClientApplicationTests.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../Java/Maven/reRepository/org/springframework/boot/spring-boot-autoconfigure/2.7.12/spring-boot-autoconfigure-2.7.12.jar!/org/springframework/boot/autoconfigure/AutoConfigurationImportSelector.class</url>
+          <line>65</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../Java/Maven/reRepository/org/springframework/boot/spring-boot-autoconfigure/2.7.12/spring-boot-autoconfigure-2.7.12.jar!/org/springframework/boot/autoconfigure/AutoConfigurationImportSelector.class</url>
+          <line>68</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../Java/Maven/reRepository/org/springframework/boot/spring-boot-autoconfigure/2.7.12/spring-boot-autoconfigure-2.7.12-sources.jar!/org/springframework/boot/autoconfigure/AutoConfigurationImportSelector.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rpc-grpc-boot-server/src/main/java/com/tk/rpcgrpcbootserver/config/AutoConfigurationImportSelector.java</url>
+          <line>378</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../Java/Maven/reRepository/io/grpc/grpc-stub/1.51.0/grpc-stub-1.51.0-sources.jar!/io/grpc/stub/ClientCalls.java</url>
+          <line>153</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rpc-grpc-nacos-client/src/main/java/com/tk/rpcgrpcnacosclient/config/CustomNameResolver.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rpc-grpc-nacos-client/src/main/java/com/tk/rpcgrpcnacosclient/config/CustomNameResolverProvider.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rpc-grpc-nacos-client/src/main/java/com/tk/rpcgrpcnacosclient/config/CustomNameResolverProvider.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rpc-grpc-nacos-client/src/main/java/com/tk/rpcgrpcnacosclient/config/CustomNameResolverProvider.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rpc-grpc-nacos-client/src/main/java/com/tk/rpcgrpcnacosclient/config/CustomNameResolverProvider.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../Java/Maven/reRepository/io/grpc/grpc-api/1.51.0/grpc-api-1.51.0-sources.jar!/io/grpc/NameResolverRegistry.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="73" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

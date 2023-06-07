@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="rpc-grpc-server" />
         <module name="rpc-grpc-boot-client" />
+        <module name="rpc-grpc-nacos-client" />
         <module name="rpc-grpc-demo" />
         <module name="rpc-grpc-register-server" />
         <module name="rpc-grpc-client" />
         <module name="rpc-grpc-api" />
         <module name="rpc-grpc-register-client" />
         <module name="rpc-grpc-boot-server" />
+        <module name="rpc-grpc-nacos-server" />
       </profile>
     </annotationProcessing>
   </component>
@@ -21,6 +23,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="rpc-grpc-boot-client" options="-parameters" />
       <module name="rpc-grpc-boot-server" options="-parameters" />
+      <module name="rpc-grpc-nacos-client" options="-parameters" />
+      <module name="rpc-grpc-nacos-server" options="-parameters" />
     </option>
   </component>
 </project>
