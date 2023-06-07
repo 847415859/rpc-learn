@@ -72,4 +72,35 @@ public class HelloServiceImpl extends HelloServiceGrpc.HelloServiceImplBase {
         }
         responseObserver.onCompleted();
     }
+
+
+    /**
+     * 客户端企业端 双向流
+     * @param responseObserver
+     * @return
+     */
+    @Override
+    public StreamObserver<HelloProto.HelloRequest> bothWaySend(StreamObserver<HelloProto.HelloResponse> responseObserver) {
+        return new StreamObserver<HelloProto.HelloRequest>() {
+            @Override
+            public void onNext(HelloProto.HelloRequest value) {
+                log.info("接受到 client 消息为：{}",value);
+                HelloProto.HelloResponse helloResponse = HelloProto.HelloResponse.newBuilder()
+                        .setResult("double stream " + value)
+                        .build();
+                responseObserver.onNext(helloResponse);
+            }
+
+            @Override
+            public void onError(Throwable t) {
+                log.info("接受到 client 消息错误 ：{}",t);
+            }
+
+            @Override
+            public void onCompleted() {
+                log.info("接受到 client 消息完成");
+                responseObserver.onCompleted();
+            }
+        };
+    }
 }

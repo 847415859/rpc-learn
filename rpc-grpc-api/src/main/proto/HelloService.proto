@@ -28,4 +28,6 @@ service HelloService {
 
   // 服务端流式RPC
   rpc c2ss(HelloRequest) returns (stream HelloResponse);
+
+  rpc bothWaySend(stream HelloRequest) returns (stream HelloResponse);
 }
